@@ -1,0 +1,49 @@
+{
+  "name": "cssthemes-loader-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --config=webpack.config.dev --port=3000",
+    "serve-assets": "node_modules/.bin/webpack-dev-server --config ./webpack.config.dev.js --port 3000"
+  },
+  "betterScripts": {
+    "run:start": {
+      "command": "babel-node server/server.js",
+      "env": {
+        "NODE_ENV": "development",
+        "APPDOMAIN": 17,
+        "ZLOG_LEVEL": "DEBUG",
+        "BABEL_ENV": "local"
+      }
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "node-sass": "^4.5.2",
+    "nodemon": "^1.11.0",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.17.0",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "lodash": "^4.17.4",
+    "react": "^15.5.4",
+    "react-css-modules": "^4.0.5",
+    "react-dom": "^15.5.4",
+    "react-hot-loader": "^3.0.0-beta.7",
+    "redux": "^3.6.0"
+  }
+}

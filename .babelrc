@@ -1,0 +1,11 @@
+{
+  "presets": [
+    "env",
+    "react",
+    ["es2015", {"modules": false}]
+  ],
+  "plugins": [
+    "transform-async-to-generator",
+    "react-hot-loader/babel"
+  ]
+}

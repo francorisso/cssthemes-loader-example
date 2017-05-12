@@ -1,0 +1,39 @@
+$var1: red;
+$var2: red;
+$var3: red;
+
+.container {
+    background: #0f0;
+}
+
+.info {
+    color: #f00;
+    font-size: 45px;
+    font-weight: bold;
+
+    .text {
+        font-weight: bold;
+    }
+}
+
+:android {
+    .container {
+        background: #f2f2f2;
+    }
+
+    .info {
+        color: #f00;
+    }
+
+    .extra {
+        font-size: 12px;
+    }
+}
+
+:ios {
+    .info {
+        color: white;
+        font-weight: normal;
+        font-size: 30px;
+    }
+}
